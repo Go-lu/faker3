@@ -4,7 +4,7 @@
 邀请码每场活动开始后都会变化！！！请注意定时更新环境变量
 
 
-cron: 5 2 * * * jd_party_invite.js
+cron: 5 2 * * * jd_springinvite.js
 
 */
 
