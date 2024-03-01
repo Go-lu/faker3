@@ -7,7 +7,7 @@ cron:15 0-23/12 * * *
 ============Quantumultx===============
 [task_local]
 #取关（收藏的）店铺和商品
-15 0-23/12 * * * jd_unfollow.js, tag=取关（收藏的）店铺和商品, enabled=true
+15 0-23/12 * * * jd_unfollow1.js, tag=取关（收藏的）店铺和商品, enabled=true
 
 注：系统可能会存在无法被正常取关的异常商品或异常店铺
 
