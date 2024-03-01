@@ -7,7 +7,7 @@ JD_38WISH_ID //指定助力ID
 
 自行控制助力上限
 
-1 0 * * * jd_38help.js
+1 0,16 * * * jd_38help.js
 
 */
 
