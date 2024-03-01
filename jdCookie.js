@@ -2,8 +2,6 @@
 此文件为Node.js专用。其他用户请忽略
  */
 //此处填写京东账号cookie。
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY = process.env.fakerGolbalproxy || ''
 let CookieJDs = [
   '',//账号一ck,例:pt_key=XXX;pt_pin=XXX;
   '',//账号二ck,例:pt_key=XXX;pt_pin=XXX;如有更多,依次类推
