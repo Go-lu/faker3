@@ -4,15 +4,20 @@
 #new Env('拉库修复')
 #
 
-# 在本地执行的命令
-COMMAND="git config --global http.postBuffer 524288000"
+# 设置 http.postBuffer
+echo "设置 github缓存配置"
+git config --global http.postBuffer 524288000
 
-# 打印正在执行的命令
-echo "执行命令: $COMMAND"
+# 查看 http.postBuffer 配置
+echo "查看缓存配置 配置为:524288000 则成功"
+POST_BUFFER_VALUE=$(git config --global http.postBuffer)
+echo "http.postBuffer 的值是: $POST_BUFFER_VALUE"
 
-# 执行命令并捕获输出
-OUTPUT=$($COMMAND)
+# 设置 http.sslVerify
+echo "设置 github拉库SSL检验配置"
+git config --global http.sslVerify "false"
 
-# 打印输出
-echo "命令输出:"
-echo "$OUTPUT"
+# 查看 http.sslVerify 配置
+echo "查看 github拉库SSL检验配置 配置为false则成功"
+SSL_VERIFY_VALUE=$(git config --global http.sslVerify)
+echo "http.sslVerify 的值是: $SSL_VERIFY_VALUE"
