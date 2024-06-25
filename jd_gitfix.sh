@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #依赖安装，运行一次就好
-#0 8 5 5 * jd_indeps.sh
-#new Env('拉库修复')
+#0 2 * * * jd_gitfix.sh
+#new Env('github拉库修复')
 #
 
 # 设置 http.postBuffer
